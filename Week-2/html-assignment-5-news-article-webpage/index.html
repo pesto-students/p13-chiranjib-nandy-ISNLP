@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Network Join Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        form {
+            display: inline-block;
+            text-align: left;
+            border: 1px solid black;
+            padding: 20px;
+            margin: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        
+        textarea {
+            resize: vertical;
+        }
+        
+        input[type="file"] {
+            margin-bottom: 20px;
+        }
+        
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h3>To subscribe please enter your contact details below:</h1>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="fullName">Full Name:</label>
+            <input type="text" name="fullName" id="fullName" required placeholder="Enter your name">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required placeholder="Enter your email">
+        </div>
+        <div>
+            <label for="about">About You:</label>
+            <textarea rows="3" cols="50" name="about" id="about" placeholder="Write a few words about yourself"></textarea>
+        </div>
+        <div>
+            <label for="picture">Profile Picture:</label>
+            <input type="file" name="picture" id="picture">
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>
