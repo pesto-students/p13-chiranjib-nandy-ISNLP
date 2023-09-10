@@ -1,0 +1,66 @@
+.container {
+    padding: 5px;
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-size: 13px;
+    border: 1px solid #cccccc;
+    text-align: center;
+}
+
+.offer-container {
+    display: inline-block;
+    justify-content: center;
+}
+
+.offer {
+    width: 400px;
+    margin: 4px;
+    text-align: center;
+    border: 1px solid #cccccc;
+    vertical-align: top;
+}
+
+.offerTitle {
+    font: bold 14px #ffffff;
+    background-color: #00b3b3;
+    margin: 0px;
+    padding: 15px;
+    color: white;
+}
+
+.offerContents {
+    padding: 20px;
+    background-color: #fafafa;
+}
+
+#heading {
+    font-size: 16px;
+    color: #444444;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    background-color: #ffffff;
+    /* and no border spacing; */
+}
+
+th {
+    font: bold 12px/1.5 "Roboto", "Helvetica", sans-serif;
+    color: #777777;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+td {
+    font: 13px "Roboto", "Helvetica", sans-serif;
+    color: #444444;
+    padding: 10px 20px;
+    text-align: left;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.finalValue {
+    font: bold 13px "Roboto", "Helvetica", sans-serif;
+    color: #2222ff;
+}
