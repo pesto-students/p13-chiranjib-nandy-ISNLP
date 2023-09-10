@@ -1,0 +1,31 @@
+function calcWordFrequencies() {
+    const userInput = prompt("Enter a list of words separated by spaces:");
+    
+    if (userInput) {
+        // Split the input into an array of words
+        const words = userInput.split(" ");
+        console.log(`Let's check the words: ${words}`);
+        
+        // Create an object to store word frequencies
+        const wordFrequencies = {};
+
+        // Count the frequencies of each word using the map function
+        words.map(word => {
+            const lowercaseWord = word.toLowerCase();
+            wordFrequencies[lowercaseWord] = (wordFrequencies[lowercaseWord] || 0) + 1;
+        });
+
+        // Output the message once before displaying word frequencies
+        console.log("The word frequencies are as follows:");
+      
+        // Output word frequencies to the console
+        for (const word in wordFrequencies) {
+            console.log(`${word}: ${wordFrequencies[word]}`);
+        }
+    } else {
+        console.log("No input provided.");
+    }
+}
+
+// Call the function to initiate the process
+calcWordFrequencies();
