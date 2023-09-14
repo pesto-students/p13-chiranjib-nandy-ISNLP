@@ -1,0 +1,43 @@
+.mainContainer {
+    width: 600px;
+    height: 280px;
+    border: 2px solid blue;
+    padding: 5px;
+    background-color: #F0F0F0;
+}
+
+h1 {
+    font-size: 16pt;
+    font-family: Arial, sans-serif;
+    color: blue;
+    font-style: italic;
+}
+
+.topLeftContainer {
+    background-color: yellow;
+    float: left;
+    width: 200px;
+    padding: 10px;
+    margin: 0 10px 20px 0;
+}
+
+.bottomLeftContainerBL {
+    position: absolute;
+    top: 200px;
+    left: 110px;
+    width: 200px;
+    padding: 10px;
+    background-color: orange;
+}
+
+.topRightContainer {
+}
+
+.bottomRightContainer {
+    float: right;
+    width: 200px;
+    background-color: rgb(255, 80, 0);
+    color: white;
+    padding: 10px;
+    margin: 20px 40px 0 0;
+}
