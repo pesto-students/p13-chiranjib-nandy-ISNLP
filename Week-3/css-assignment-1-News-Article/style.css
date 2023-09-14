@@ -1,0 +1,26 @@
+#logo {
+    width: 25%;
+    height : auto; 
+}
+
+#heading{
+    color: white;
+    background-color: red;
+    font: bold 24px/1.5 Arial, sans-serif;
+    padding: 5px;
+}
+
+.meta-info{
+    font: 12px/1.5 Arial, sans-serif;
+    color: lightgray;
+}
+
+article{
+    font: 16px/1.0 "Times New Roman", Times, serif;
+    color: gray;
+}
+
+a{
+    font: 12px/1.5;
+    color: blue;
+}
