@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Add Review</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>&nbsp;&nbsp;
+                <a href="addReview.html">Add Review</a>&nbsp;&nbsp;
+                <a href="about.html">About</a>
+        </nav>
+    </header>
+    
+    <section class="add-review">
+        <h1>Add Review</h1>
+        <form>
+            <!-- Form elements for review input -->
+            <label for="Name">Name? </label>
+            <input type="text" id="Name">
+            
+            <br>
+            <label for="restaurant">Restaurant? </label>            
+            <select id="restaurant" name="Choose one">
+                <option value="" selected>Choose Restaurant</option>
+                <option value="mainStreetcafe">Main Street Cafe</option>
+                <option value="greekHouseCafe">Greek House Cafe</option>
+            </select>
+            <br>
+            <label for="Date">Date of Visit? </label>
+            <input type="date" id="Date">
+            <br>
+            <label for="rating">Rating</label>
+            <select id="rating" name="Rating">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <br>
+            <label for="details">Details? </label>
+            <textarea rows="5" id="details" maxlength="1000"></textarea>
+            <br>
+            <br>
+            <input type="submit" value="Submit" style="width: 200px; height: 40px; font-size: 20px;">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2022 Restaurant Reviews</p>
+    </footer>
+</body>
+
+</html>

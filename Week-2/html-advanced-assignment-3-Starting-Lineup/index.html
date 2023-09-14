@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starting Lineup</title>
+    <style>
+        p {
+            display: inline-block;
+            width: 200px;
+            vertical-align: top;
+            /*margin: 10px;*/
+        }
+
+        /*input[type="date"], input[type="submit"] {*/
+        /*    margin-left: 10px;*/
+        /*}*/
+
+        .statusDiv label {
+            display: inline-block;
+            height:30px;
+        }
+        
+        .playersDiv label {
+            display: block;
+            height: 30px;
+        }
+
+        .borderLabel {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Starting Lineup</h2>
+    <form action="/submit" method="POST">
+
+        <!-- Fieldset for Status -->
+        <fieldset class="statusDiv">
+            <legend class="borderLabel">Status:</legend>
+            <label>
+                <input type="radio" id="status" name="status" value="Draft">
+                Draft
+            </label>
+            <label>
+                <input type="radio" name="status" value="Final" checked>
+                Final
+            </label>
+        </fieldset>
+
+        <p class="statusDate">
+            <label class="borderLabel">Date:</label>
+            <input type="date" id="date" name="date" value="2013-05-02">
+        </p>
+
+        <!-- Dropdown for Game Date -->
+        <p>
+            <label class="borderLabel">Game Date:</label>
+            <select name="gameDate">
+                <option value="2023-03-20">March 20</option>
+                <option value="2023-03-24">March 24</option>
+                <option value="2023-04-02">April 2</option>
+                <option value="2023-04-06">April 6</option>
+                <option value="2023-04-13">April 13</option>
+            </select>
+        </p>
+
+        <!-- Fieldset for Players -->
+        <fieldset class="playersDiv">
+            <legend class="borderLabel">Players:</legend>
+            <label>
+                <input type="checkbox" name="players[]" value="Aarav Agarwal">
+                Aarav Agarwal
+            </label>
+            <label>
+                <input type="checkbox" name="players[]" value="Ava Johnson">
+                Ava Johnson
+            </label>
+            <label>
+                <input type="checkbox" name="players[]" value="Julio Ortiz">
+                Julio Ortiz
+            </label>
+            <label>
+                <input type="checkbox" name="players[]" value="Liam Rubio">
+                Liam Rubio
+            </label>
+            <label>
+                <input type="checkbox" name="players[]" value="Emma Witherspoon">
+                Emma Witherspoon
+            </label>
+        </fieldset>
+
+        <p class="statusSubmit">
+            <input type="submit" value="Submit">
+        </p>
+    </form>
+</body>
+
+</html>
